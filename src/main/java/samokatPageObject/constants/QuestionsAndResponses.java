@@ -1,4 +1,4 @@
-package samokatPageObject;
+package samokatPageObject.constants;
 
 /**
  * Справочник "Вопросы-Ответы"

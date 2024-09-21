@@ -3,7 +3,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import samokatPageObject.MainPage;
-import samokatPageObject.QuestionsAndResponses;
+import samokatPageObject.constants.QuestionsAndResponses;
 
 import static org.hamcrest.core.IsEqual.equalTo;
 
