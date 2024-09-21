@@ -31,6 +31,11 @@ public class OrderFormRentPage {
     private final By dropdownRentPeriod = By.xpath(".//div[text()='* Срок аренды']");
 
     /**
+     * Div "Сутки"
+     */
+    private final By dayPeriod = By.xpath(".//div[text()='сутки']");
+
+    /**
      * Checkbox "Черный жемчуг"
      */
     private final By checkbox = By.xpath(".//label[@for='black']");
@@ -70,7 +75,7 @@ public class OrderFormRentPage {
      */
     public void fillRentPeriodDropdown() {
         driver.findElement(dropdownRentPeriod).click();
-        driver.findElement(By.xpath(".//div[text()='сутки']")).click();
+        driver.findElement(dayPeriod).click();
     }
 
     /**

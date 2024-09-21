@@ -1,6 +1,5 @@
 package samokatPageObject.confirmWindow;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -47,8 +46,8 @@ public class RegisteredOrder {
     /**
      * Сценарий "Проверить, что появилось всплывающее окно с сообщением об успешном создании заказа"
      */
-    public void checkSuccessOrderWindow() {
+    public Boolean checkSuccessOrderWindow() {
         waitForOpened();
-        Assert.assertTrue(driver.findElement(header).isDisplayed());
+        return driver.findElement(header).isDisplayed();
     }
 }

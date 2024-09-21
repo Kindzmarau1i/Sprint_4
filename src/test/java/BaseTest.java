@@ -7,10 +7,12 @@ public abstract class BaseTest {
 
     protected WebDriver driver;
 
+    private static final String MAIN_URL = "https://qa-scooter.praktikum-services.ru/";
+
     @Before
     public void open() {
         driver = new ChromeDriver();
-        driver.get("https://qa-scooter.praktikum-services.ru/");
+        driver.get(MAIN_URL);
     }
 
     @After

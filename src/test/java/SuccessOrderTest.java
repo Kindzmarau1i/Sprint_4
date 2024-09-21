@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -32,6 +33,7 @@ public class SuccessOrderTest extends BaseTest {
         orderFormPage.checkSuccessOrder("Руслан", "Николаев", "г.Москва, ул.Тверская, д.75, п.3", "89179375481");
         orderFormRentPage.checkSuccessOrder("18.09.2024", "Без комментария");
         approveOrder.clickButtonYes();
-        registeredOrder.checkSuccessOrderWindow();
+        Boolean isVisible = registeredOrder.checkSuccessOrderWindow();
+        Assert.assertTrue(isVisible);
     }
 }
